@@ -10,6 +10,11 @@
     <brother2></brother2>
 
     <h2>祖先和后代</h2>
+    <oneself></oneself>
+
+    <h2>任意两个组件之间</h2>
+    <other1></other1>
+    <other2></other2>
   </div>
 </template>
 
@@ -17,11 +22,18 @@
 import Child from './child'
 import Brother1 from './brother1'
 import Brother2 from './brother2'
+import Oneself from './oneself'
+import Other1 from './other1'
+import Other2 from './other2'
+
 export default {
   components: {
     Child,
     Brother1,
-    Brother2
+    Brother2,
+    Oneself,
+    Other1,
+    Other2
   },
   data() {
     return {

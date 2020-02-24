@@ -23,6 +23,16 @@ const routes = [
     name: 'PassValue',
     component: () => import('@/views/PassValue')
   },
+  {
+    path: '/form',
+    name: 'Form',
+    component: () => import('@/views/Form')
+  },
+  {
+    path: '/slotTemplate',
+    name: 'SlotTemplate',
+    component: () => import('@/views/SlotTemplate')
+  },
 ]
 
 const router = new VueRouter({
