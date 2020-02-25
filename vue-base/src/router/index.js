@@ -38,6 +38,11 @@ const routes = [
     name: 'Tree',
     component: () => import('@/views/Tree')
   },
+  {
+    path: '/kNotice',
+    name: 'KNotice',
+    component: () => import('@/views/KNotice')
+  },
 ]
 
 const router = new VueRouter({

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>表单登录</h1>
+    <h1>表单校验</h1>
     <k-form :model="form" :rules="rules" ref="from">
       <k-form-item label="用户名" props="userName">
         <k-input v-model="form.userName"></k-input>
