@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/passValue">组件之间的传值</router-link> |
       <router-link to="/form">表单</router-link> |
-      <router-link to="/slotTemplate">插槽</router-link>
+      <router-link to="/slotTemplate">插槽</router-link> |
+      <router-link to="/tree">递归组件</router-link>
     </div>
     <router-view/>
   </div>

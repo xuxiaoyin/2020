@@ -33,6 +33,11 @@ const routes = [
     name: 'SlotTemplate',
     component: () => import('@/views/SlotTemplate')
   },
+  {
+    path: '/tree',
+    name: 'Tree',
+    component: () => import('@/views/Tree')
+  },
 ]
 
 const router = new VueRouter({
