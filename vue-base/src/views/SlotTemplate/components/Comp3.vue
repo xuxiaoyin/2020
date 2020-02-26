@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>组件3</div>
-    <slot :user="user">{{user.firstName}}</slot>
+    <slot :user="user"></slot>
   </div>
 </template>
 
