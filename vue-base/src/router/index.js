@@ -43,10 +43,15 @@ const routes = [
     name: 'KNotice',
     component: () => import('@/views/KNotice')
   },
+  {
+    path: '/kVuex',
+    name: 'KVuex',
+    component: () => import('@/views/KVuex')
+  },
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

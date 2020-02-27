@@ -46,9 +46,9 @@ export default {
     submitForm(form) {
       this.$refs[form].validate(valid => {
         if (valid) {
-          console.log("登录成功")
+          alert("登录成功")
         } else {
-          console.log("登录失败")
+          alert("登录失败")
         }
       })
     }
