@@ -56,4 +56,41 @@ const router = new VueRouter({
   routes
 })
 
+// // ////////////////////////////////////////动态路由
+// 映射关系
+// const mapComp = {
+//   Home: () => import('../views/Home.vue'),
+//   About: () => import('@/views/About')
+// }
+
+// let route = []
+// const routesconfigs = [
+//   {
+//     path: '/',
+//     name: 'home',
+//     component: 'Home'
+//   },
+//   {
+//     path: '/about',
+//     name: 'about',
+//     component: 'About'
+//   }
+// ].map(item => {
+//   route.push(mapComponets(item))
+// })
+// router.addRoutes(route) 
+
+// // 递归替换
+// function mapComponets(route) {
+//   route.component = mapComp[route.component]
+//   if (route.children) {
+//     route.children = route.children.map(child => {
+//       mapComponets(child)
+//     })
+//   }
+//   return route
+// }
+// console.log(routesconfigs)
+// console.log(routes)
+// //////////////////////////////////////////////////////动态路由
 export default router
