@@ -5,6 +5,7 @@
     <button @click="add">点击添加</button>
     <br>
     <button @click="addAction">触发Action</button>
+    <p>{{$store.getters.score}}</p>
   </div>
 </template>
 

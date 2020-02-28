@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './krouter'
+// import router from './krouter'
+import router from './router'
 import store from './store'
 import { dispatch } from './common/js/util'
 import create from './common/js/create'
