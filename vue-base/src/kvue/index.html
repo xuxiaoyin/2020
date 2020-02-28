@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script src="./kvue.js"></script>
+<body>
+  <div id="app"></div>
+</body>
+<script >
+  const app = new Kvue({
+    el: 'app',
+    data: {
+      foo: 'foo',
+      bar: {
+        foo: '123'
+      }
+    }
+  })
+  // console.log(app.$data.foo)
+  // console.log(app.$data.bar.foo)
+  // app.$data.foo = '成功了'
+  console.log(app)
+  console.log(app.bar.foo)
+  app.foo = '成功了'
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id='app'>
+    数据响应
+  </div>
+
+  <script>
+    var obj ={}
+    Object.defineProperty(obj, 'name', {
+      get() {
+        console.log('获取')
+        return document.getElementById('app').innerHTML
+      },
+      set(newVal) {
+        console.log('设置')
+        document.getElementById('app').innerHTML = newVal
+      }
+    })
+    obj.name = '测试'
+    console.log(obj.name)
+  </script>
+</body>
+</html>

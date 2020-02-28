@@ -13,13 +13,15 @@ class Store {
     options.getters && this.handleGetters(options.getters)
   }
 
+  // 箭头函数，确保this指向正确
   commit = (type, arg) => {
     this.mutations[type](this.state, arg)
   }
 
   dispatch(type, arg) {
     this.actions[type]({
-      commit: this.commit, state: this.state
+      commit: this.commit,
+      state: this.state
     }, arg)
   }
 

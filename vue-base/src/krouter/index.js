@@ -20,7 +20,7 @@ class VueRouter{
   bindEvent() {
     window.addEventListener('load', this.onHashChange.bind(this))
     window.addEventListener('hashchange', this.onHashChange.bind(this))
-  }
+  } 
 
   onHashChange() {
     this.app.current = window.location.hash.slice(1) || '/'
