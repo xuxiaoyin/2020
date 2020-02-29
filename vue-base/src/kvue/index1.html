@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script src="./kvue.js"></script>
+  <div id='app'></div>
+  <script>
+    new Kvue({
+      template: 
+        `<div>
+          <span>{{name1}}</span>
+          <span>{{name2}}</span>
+          <span>{{name1}}</span>
+        </div>`,
+        data: {
+          name1: 'name1',
+          name2: 'name2',
+          name3: 'name3'
+        },
+        created() {
+          this.name1 = '开课吧'
+          this.name3 = 'Jerry'
+        },
+    })
+  </script>
+</body>
+</html>

@@ -6,25 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+<script src="./compile.js"></script>
 <script src="./kvue.js"></script>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <p>{{name1}}</p>
+    <p k-text="name2"></p>
+    <p k-html="name4"></p>
+    <input type="text" k-model="name1">
+    <button @click="change">点击</button>
+  </div>
 </body>
 <script >
   const app = new Kvue({
-    el: 'app',
+    el: '#app',
     data: {
       foo: 'foo',
       bar: {
         foo: '123'
+      },
+      name1: '小银',
+      name2: '宸宸',
+      name3: '丁',
+      name4: '姐姐'
+    },
+    created() {
+      setTimeout(() => {
+        console.log(this.name3)
+        this.name1 = '我变了'
+      }, 2000)
+    },
+    methods: {
+      change() {
+        this.name4 = '哥哥'
       }
-    }
+    },
   })
   // console.log(app.$data.foo)
   // console.log(app.$data.bar.foo)
   // app.$data.foo = '成功了'
-  console.log(app)
-  console.log(app.bar.foo)
-  app.foo = '成功了'
+  
+  // 代理$data
+  // console.log(app)
+  // console.log(app.bar.foo)
+  // app.foo = '成功了'
 </script>
 </html>
