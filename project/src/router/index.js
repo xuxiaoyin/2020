@@ -10,12 +10,16 @@ export const constRoutes = [
   {
     path: "/login",
     component: () => import("@/views/Login"),
-    hidden: true // 导航菜单忽略该项
+    hidden: true // 导航菜单忽略该项,
   },
   {
     path: "/",
     component: Layout,
     redirect: "/home",
+    meta: {
+      title: "Home", // 导航菜单项的标题
+      icon: "qq"  // 导航菜单项图标
+    },
     children: [
       {
         path: "home",
@@ -30,6 +34,40 @@ export const constRoutes = [
   }
 ]
 
+// 权限页面
+export const asyncRoutes = [
+  {
+    path: "/about",
+    component: Layout,
+    redirect: "/about/index",
+    meta: {
+      title: "管理",
+      roles: ['admin', 'editor']
+    },
+    children: [
+      {
+        path: "index",
+        component: () => import("@/views/About.vue"),
+        name: "about",
+        meta: {
+          title: "About",
+          icon: "wx",
+          roles: ['admin', 'editor']
+        }
+      },
+      {
+        path: "test",
+        component: () => import("@/views/About.vue"),
+        name: "test",
+        meta: {
+          title: "Test",
+          icon: "wx",
+          roles: ['admin', 'editor']
+        }
+      }
+    ]
+  }
+]
 
 const router = new VueRouter({
   mode: 'history',

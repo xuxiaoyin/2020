@@ -4,6 +4,9 @@ import router from './router'
 import store from './store'
 
 import "./icons"
+import './plugins/element.js'
+// 路由守卫
+import './permission'
 
 Vue.config.productionTip = false
 
