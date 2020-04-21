@@ -52,7 +52,7 @@ export const asyncRoutes = [
         meta: {
           title: "About",
           icon: "wx",
-          roles: ['admin', 'editor']
+          roles: ['admin']
         }
       },
       {

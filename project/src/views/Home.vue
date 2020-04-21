@@ -1,6 +1,8 @@
 <template>
   <div class="home">
     homepage
+    <button v-permission="['admin', 'editor']">editor button</button>
+    <button v-permission="['admin']">admin button</button>
   </div>
 </template>
 
