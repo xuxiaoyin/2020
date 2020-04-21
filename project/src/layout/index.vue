@@ -2,6 +2,7 @@
   <div class="app-wrapper">
     <side-bar class="sidebar-container" />
     <div class="main-container">
+      <Breadcrumb></Breadcrumb>
       <router-view />
     </div>
   </div>
@@ -9,7 +10,8 @@
 
 <script>
 import SideBar from './SideBar'
+import Breadcrumb from "@/components/Breadcrumb"
 export default {
-  components: { SideBar }
+  components: { SideBar, Breadcrumb }
 }
 </script>

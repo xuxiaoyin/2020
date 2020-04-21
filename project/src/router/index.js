@@ -16,13 +16,15 @@ export const constRoutes = [
     path: "/",
     component: Layout,
     redirect: "/home",
+    name: "home",
     meta: {
       title: "Home", // 导航菜单项的标题
-      icon: "qq"  // 导航菜单项图标
+      icon: "qq",  // 导航菜单项图标
+      breadcrumb: false,
     },
     children: [
       {
-        path: "home",
+        path: "/home",
         component: () => import("@/views/Home.vue"),
         name: "home",
         meta: {
