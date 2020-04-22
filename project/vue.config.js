@@ -9,7 +9,17 @@ const title = 'vue项目最佳实践'
 
 module.exports = {
   devServer: {
-    port
+    port,
+    proxy: {
+      // 代理
+      [process.env.VUE_APP_BASE_API]: {
+        target: `http://127.0.0.1:3000/`,
+        changeOrigin: true,
+        pathRewrite: {
+          ["^" + process.env.VUE_APP_BASE_API]: ""
+        }
+      }
+    }
   },
   configureWebpack: {
     name: title
