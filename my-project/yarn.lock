@@ -2148,10 +2148,10 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
-cube-ui@~1.12.15:
-  version "1.12.42"
-  resolved "https://registry.npm.taobao.org/cube-ui/download/cube-ui-1.12.42.tgz#0d194fa1c1b922cabd8ce9cc2068b59d30ffa8c2"
-  integrity sha1-DRlPocG5Isq9jOnMIGi1nTD/qMI=
+cube-ui@^1.12.42:
+  version "1.12.44"
+  resolved "https://registry.yarnpkg.com/cube-ui/-/cube-ui-1.12.44.tgz#9c26b8cfe6417333d85a79244c47e410818056ff"
+  integrity sha512-WYSNJ8Cc7/JtWWhtieOwHYEzKBCY7roS2abKw/n9gdrxxDCtEF07GukLuHEb8Shudci4Lz3KlklkBWAK2FrleA==
   dependencies:
     better-scroll "~1.12.6"
     vue-create-api "^0.2.3"
@@ -4166,9 +4166,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0:
-  version "4.17.15"
-  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -7327,7 +7327,7 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack-transform-modules-plugin@^0.4.0:
+webpack-transform-modules-plugin@^0.4.0, webpack-transform-modules-plugin@^0.4.3:
   version "0.4.4"
   resolved "https://registry.npm.taobao.org/webpack-transform-modules-plugin/download/webpack-transform-modules-plugin-0.4.4.tgz#61a3e71b35eac49a5102423a3f66946b66374443"
   integrity sha1-YaPnGzXqxJpRAkI6P2aUa2Y3REM=
