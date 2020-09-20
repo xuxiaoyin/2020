@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8vd7la');
+  src:  url('../fonts/icomoon.eot?8vd7la#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8vd7la') format('truetype'),
+    url('../fonts/icomoon.woff?8vd7la') format('woff'),
+    url('../fonts/icomoon.svg?8vd7la#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-carSum:before {
+  content: "\e900";
+}
+.icon-code:before {
+  content: "\e901";
+  color: #54695e;
+}
+.icon-company .path1:before {
+  content: "\e902";
+  color: rgb(92, 92, 92);
+}
+.icon-company .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(92, 92, 92);
+}
+.icon-company .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(27, 190, 141);
+}
+.icon-days:before {
+  content: "\e905";
+}
+.icon-destination:before {
+  content: "\e906";
+}
+.icon-last:before {
+  content: "\e907";
+}
+.icon-location:before {
+  content: "\e908";
+}
+.icon-model:before {
+  content: "\e909";
+  color: #666;
+}
+.icon-origin:before {
+  content: "\e90a";
+}
+.icon-password:before {
+  content: "\e90b";
+  color: #54695e;
+}
+.icon-phnoe:before {
+  content: "\e90c";
+  color: #54695e;
+}
+.icon-right:before {
+  content: "\e90d";
+}
+.icon-start:before {
+  content: "\e90e";
+}
+.icon-startTime:before {
+  content: "\e90f";
+}
+.icon-style:before {
+  content: "\e910";
+  color: #4a7ee3;
+}
+.icon-time:before {
+  content: "\e911";
+}
+.icon-up:before {
+  content: "\e912";
+}
+.icon-upload:before {
+  content: "\e913";
+}
+.icon-user:before {
+  content: "\e914";
+  color: #606060;
+}
+.icon-wait:before {
+  content: "\e915";
+}

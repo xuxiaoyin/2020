@@ -25,6 +25,8 @@ module.exports = {
     name: title
   },
   chainWebpack(config) {
+    console.log('config')
+    console.log(config)
     // svg规则配置一下，排除icons目录
     config.module.rule('svg')
       .exclude.add(resove('src/icons'))

@@ -6,6 +6,5 @@ Vue.component('svg-icon', SvgIcon)
 
 // require.context
 const req = require.context('./svg', false, /\.svg$/)
-console.log(req.keys().map(req))
 // ['qq.svg', wx.svg]
 req.keys().map(req)
